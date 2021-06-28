@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> marwan pablo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- icon -->
+    <link rel="icon" href="./img/050b05f27a072d1fd325dc6a6f7de1e7.jpg">
+
+    <!-- Font -->
+    <link rel="preconnect" href="">
+    <link href="" rel="stylesheet">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="./style/fontawesome.css">
+    <!-- animaition loibrary  --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <!-- style-->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+<section class="header text-center  justify-content-start">
+    <div class="container get py-5">
+        <div class="row">
+            <div class="col-lg-12 my-5">
+                <div class="btn btn-danger my-5" onclick="f()">
+                    <a href="#scroll"> دوس هنا </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="scroll text-center  justify-content-start">
+    <div class="container get py-5">
+        <div class="row">
+            <div class="col-lg-12 my-5">
+                <h1> اطلع دوس  </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="scroll" id="scroll">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-lg-6 ">
+                <div class="audio">
+                    <h1 id="scrollf"> هشغلها بردو لو مدوستش </h1>
+                    <span class="ss"></span>
+                    <span class="audio pt-3">
+                    <audio id="myAudio" controls>
+                        <source src="/audio/yt1s (mp3cut.net).mp3" type="audio/mpeg">
+                      </audio>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h1>يلا يا نجم</h1>
+                <img src="./img/E4wJlc0XwAUX7ru.jpg" class="img-fluid w-75" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- jquery js -->
+<script src="js/./jquery-3.3.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- js code -->
+<script>
+function f() {
+var audio=document.getElementById('myAudio');
+audio.play();
+}
+window.addEventListener('scroll',function() {
+            var div  = document.getElementById('myAudio'),
+                divPosition = div.getBoundingClientRect().top  ,
+                windowPosition = window.innerHeight;
+            if (divPosition < windowPosition){
+
+                div.play();
+            } 
+            
+
+        });
+</script>
+</body>
+
+</html>
